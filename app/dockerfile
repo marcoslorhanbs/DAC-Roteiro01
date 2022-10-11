@@ -2,9 +2,9 @@ FROM python
 
 WORKDIR /Roteiro01
 
-ADD WebProject /Roteiro01
-ADD WebApp /Roteiro01/
-ADD requirements.txt /Roteiro01/
+ADD WebProject /app
+ADD WebApp /app/
+ADD requirements.txt /app/
 
 # Cria o ambiente virtual para instalar as dependencias 
 RUN python -m venv venv 
