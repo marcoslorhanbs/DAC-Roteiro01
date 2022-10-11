@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1
 FROM python
 
 WORKDIR /Roteiro01
@@ -6,11 +7,9 @@ ADD WebProject /app
 ADD WebApp /app/
 ADD requirements.txt /app/
 
-# Cria o ambiente virtual para instalar as dependencias 
+
 RUN python -m venv venv 
-# Ativa o ambiente virtual
-RUN source venv/Scripts/Activate
-# Instala os requisitos
+
 RUN pip install -r requirements.txt
-# Roda o servidor com o sistema web
+
 RUN python manage.py runserver
