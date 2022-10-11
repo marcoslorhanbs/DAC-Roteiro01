@@ -5,7 +5,7 @@ WORKDIR /app/
 
 ADD WebProject /app/
 ADD WebApp /app/
-ADD requirements.txt /app/
+COPY requirements.txt requirements.txt
 
 
 RUN python -m venv venv 
