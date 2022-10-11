@@ -3,10 +3,10 @@ FROM python
 
 WORKDIR /app/
 
-ADD WebProject /app/
-ADD WebApp /app/
-COPY requirements.txt requirements.txt
-
+ADD ../app/WebProject /app/
+ADD ../app/WebApp /app/
+COPY ../app/requirements.txt /app/
+COPY ../app/manage.py /app/
 
 RUN python -m venv venv 
 
