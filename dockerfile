@@ -1,9 +1,9 @@
 # syntax=docker/dockerfile:1
 FROM python
 
-WORKDIR /Roteiro01
+WORKDIR /app/
 
-ADD WebProject /app
+ADD WebProject /app/
 ADD WebApp /app/
 ADD requirements.txt /app/
 
