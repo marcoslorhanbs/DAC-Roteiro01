@@ -12,4 +12,5 @@ RUN python -m venv venv
 RUN . venv/bin/activate
 RUN pip install -r requirements.txt
 
-RUN python manage.py runserver
+# RUN python manage.py runserver
+CMD [ "python", "manage.py" , "runserver", "0.0.0.0:8080"]
